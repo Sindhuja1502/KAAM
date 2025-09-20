@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kaam | Manager Login</title>
-  <link rel="stylesheet" href="./verification.css" />
+  <link rel="stylesheet" href="/css/verification.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="form-container">
     <h2><i class="fa-solid fa-laptop-file"></i> Kaam Center Manager Login</h2>
-    <form action="http://localhost:5000/manager/login" method="POST">
+    <form id="managerForm">
       <div class="form-group">
         <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
         <input type="text" name="phone" id="phone" required>
@@ -41,6 +41,6 @@
     </form>
   </div>
 
-  <script src="./manager.js"></script>
+  <script src="/js/manager.js"></script>
 </body>
 </html>

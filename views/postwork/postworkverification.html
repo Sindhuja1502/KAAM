@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaam | Worker Login</title>
-  <link rel="stylesheet" href="./verification.css" />
+  <title>Kaam | Job Poster Login</title>
+  <link rel="stylesheet" href="/css/verification.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="form-container">
-    <h2><i class="fa-solid fa-screwdriver-wrench"></i> Worker Login</h2>
-    <form action="http://localhost:5000/worker/login" method="POST">
+    <h2><i class="fa-solid fa-bullhorn"></i> Job Poster Login</h2>
+    <form action="http://localhost:5000/postwork/login" method="POST">
       <div class="form-group">
         <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
-        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
       </div>
 
       <div class="form-group">
         <label for="name"><i class="fa-solid fa-user"></i> Full Name / ID</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name or ID" required>
+        <input type="text" name="name" id="name" placeholder="Enter your name or ID" required>
       </div>
 
       <div class="form-group">
         <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
       </div>
 
       <div class="form-group">
         <label for="location"><i class="fa-solid fa-location-dot"></i> Select Location</label>
-        <select id="location" name="location" required>
+        <select name="location" id="location" required>
           <option value="">Choose your area</option>
           <option>Hyderabad</option>
           <option>Delhi</option>
@@ -42,6 +42,6 @@
 
   </div>
 
-  <script src="./verification.js"></script>
+  <!-- <script src="./verification.js"></script> -->
 </body>
 </html>
